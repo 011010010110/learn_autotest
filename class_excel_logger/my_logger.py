@@ -30,6 +30,7 @@ class _MyLogger(logging.Logger):
             self.addHandler(_Handel2)
 
 
+
 # 写死路径，引用时候不用再实例化
 mylogger = _MyLogger("myLogger", file="MyLogger.log")
 
@@ -46,4 +47,10 @@ if __name__ == '__main__':
 日志文件的路径
 
 可配置化
+
+举例：6个测试环境 - 6个数据库 - 1套代码 - 配置文件.conf  .ini
+1套封装好的日志功能 - 3个项目
+
+.ini
+yaml
 """
