@@ -1,0 +1,35 @@
+myLogger INFO  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 29 ==============================开始测试==============================
+myLogger INFO  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 30 测试数据为：{'user': 'python27', 'passwd': 'liuyue', 'check': '{"code": 0, "msg": "登录成功"}'}
+myLogger ERROR  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 36 断言失败，用例不通过
+Traceback (most recent call last):
+  File "/Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py", line 34, in test_login
+    self.assertEqual(eval(case["check"]), res)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1130, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: {'code': 0, 'msg': '登录成功'} != {'code': 1, 'msg': '账号或密码不正确'}
+- {'code': 0, 'msg': '登录成功'}
+?          ^          ^^^^
+
++ {'code': 1, 'msg': '账号或密码不正确'}
+?          ^          ^^^^^^^^
+
+myLogger INFO  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 29 ==============================开始测试==============================
+myLogger INFO  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 30 测试数据为：{'user': 'python27', 'passwd': 123456, 'check': '{"code": 1, "msg": "账号或密码不正确"}'}
+myLogger INFO  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 39 断言成功，用例通过
+myLogger INFO  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 40 ==============================测试结束==============================
+myLogger INFO  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 29 ==============================开始测试==============================
+myLogger INFO  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 30 测试数据为：{'user': 'python25', 'passwd': 'liuyue', 'check': '{"code": 1, "msg": "账号或密码不正确"}'}
+myLogger INFO  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 39 断言成功，用例通过
+myLogger INFO  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 40 ==============================测试结束==============================
+myLogger INFO  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 29 ==============================开始测试==============================
+myLogger INFO  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 30 测试数据为：{'user': 'python25', 'passwd': None, 'check': '{"code": 1, "msg": "所有的参数不能为空"}'}
+myLogger INFO  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 39 断言成功，用例通过
+myLogger INFO  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 40 ==============================测试结束==============================
+myLogger INFO  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 29 ==============================开始测试==============================
+myLogger INFO  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 30 测试数据为：{'user': None, 'passwd': 'liuyue', 'check': '{"code": 1, "msg": "所有的参数不能为空"}'}
+myLogger INFO  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 39 断言成功，用例通过
+myLogger INFO  /Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger/test_login.py 40 ==============================测试结束==============================
