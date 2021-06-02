@@ -30,10 +30,8 @@ class _MyLogger(logging.Logger):
             self.addHandler(_Handel2)
 
 
-
 # 写死路径，引用时候不用再实例化
 mylogger = _MyLogger("myLogger", file="MyLogger.log")
-
 
 if __name__ == '__main__':
     mylogger = _MyLogger("myLogger", file="MyLogger.log")
