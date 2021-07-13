@@ -4,6 +4,7 @@
 # @coding:utf-8
 
 from configparser import ConfigParser
+import os
 
 
 class HandleConfig(ConfigParser):
@@ -12,5 +13,10 @@ class HandleConfig(ConfigParser):
         self.read(file_path, encoding="utf-8")
 
 
-conf = HandleConfig("conf.ini")
-conf.get("log", "name")
+# 获取绝对路径
+file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),"conf.ini")
+conf = HandleConfig(file_path)
+
+if __name__ == "__main__":
+    conf = HandleConfig( "conf.ini")
+    conf.get("log", "name")

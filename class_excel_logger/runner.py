@@ -8,7 +8,7 @@ import os
 
 import unittest
 
-_result = unittest.TestLoader().discover(r"/Users/liuyue/Desktop/刘岳/tokendemo/class_excel_logger")
+_result = unittest.TestLoader().discover(r"class_excel_logger")
 
 with(open("report.html", "wb"))as fs:
     runner = HTMLTestRunner(fs, title="数据驱动测试报告")

@@ -3,7 +3,10 @@
 # @Email:liuyue@soyoung.com
 # @coding:utf-8
 """
-.ini
+以.ini结尾，不然识别不出来
+
+格式为：
+
 [section]
 option = value
 option = value
