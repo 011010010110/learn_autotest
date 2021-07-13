@@ -3,8 +3,11 @@
 # @Email:liuyue@soyoung.com
 # @coding:utf-8
 
-from HTMLTestRunner import HTMLTestRunner
 import os
+
+import class_excel_logger
+from HTMLTestRunner import HTMLTestRunner
+
 
 import unittest
 
