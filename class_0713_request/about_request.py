@@ -9,8 +9,8 @@
 3、请求参数
 4、响应数据
 
-get:param
-没有请求体，parma就是追加在url后面的查询参数
+get：params
+没有请求体，params就是追加在url后面的查询参数
 接口地址？key=value1&key=value2....
 get请求不一定有请求参数
 
