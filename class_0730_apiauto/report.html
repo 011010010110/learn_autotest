@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>数据驱动测试报告</title>
+    <title>单接口测试报告</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -218,10 +218,10 @@ function showOutput(id, name) {
 --></script>
  
 <div class='heading'>
-<h1>数据驱动测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2021-08-05 20:49:33</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.005859</p>
-<p class='attribute'><strong>Status:</strong> Pass 4 Failure 1</p>
+<h1>单接口测试报告</h1>
+<p class='attribute'><strong>Start Time:</strong> 2021-08-05 20:54:18</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:01.096580</p>
+<p class='attribute'><strong>Status:</strong> Pass 3 Failure 7</p>
 
 <p class='description'></p>
 </div>
@@ -263,16 +263,16 @@ function showOutput(id, name) {
 </tr>
 
 <tr class='failClass'>
-    <td>class_excel_logger.test_login.TestLogin</td>
-    <td>5</td>
-    <td>4</td>
-    <td>1</td>
+    <td>class_0730_apiauto.test_register.TestRegister</td>
+    <td>10</td>
+    <td>3</td>
+    <td>7</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',5)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1',10)">Detail</a></td>
 </tr>
 
 <tr id='ft1.1' class='none'>
-    <td class='failCase'><div class='testcase'>test_login_1</div></td>
+    <td class='failCase'><div class='testcase'>test_register_ok_01</div></td>
     <td colspan='5' align='center'>
  
     <!--css div popup start-->
@@ -289,14 +289,77 @@ function showOutput(id, name) {
 ft1.1: Traceback (most recent call last):
   File "/Users/liuyue/Library/Python/3.9/lib/python/site-packages/ddt.py", line 182, in wrapper
     return func(self, *args, **kwargs)
-  File "/Users/liuyue/Desktop/learn_autotest/class_excel_logger/test_login.py", line 34, in test_login
-    self.assertEqual(eval(case["check"]), res)
-AssertionError: {'code': 0, 'msg': '登录成功'} != {'code': 1, 'msg': '账号或密码不正确'}
-- {'code': 0, 'msg': '登录成功'}
-?          ^          ^^^^
+  File "/Users/liuyue/Desktop/learn_autotest/class_0730_apiauto/test_register.py", line 30, in test_register_ok
+    self.assertEqual(response.json()["code"], expect["code"])
+AssertionError: 2 != 1
 
-+ {'code': 1, 'msg': '账号或密码不正确'}
-?          ^          ^^^^^^^^
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+ 
+    </td>
+</tr>
+
+<tr id='ft1.2' class='none'>
+    <td class='failCase'><div class='testcase'>test_register_ok_02</div></td>
+    <td colspan='5' align='center'>
+ 
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
+        fail</a>
+ 
+    <div id='div_ft1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.2: Traceback (most recent call last):
+  File "/Users/liuyue/Library/Python/3.9/lib/python/site-packages/ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/liuyue/Desktop/learn_autotest/class_0730_apiauto/test_register.py", line 30, in test_register_ok
+    self.assertEqual(response.json()["code"], expect["code"])
+AssertionError: 2 != 1
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+ 
+    </td>
+</tr>
+
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_register_ok_03</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft1.4' class='none'>
+    <td class='failCase'><div class='testcase'>test_register_ok_04</div></td>
+    <td colspan='5' align='center'>
+ 
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4')" >
+        fail</a>
+ 
+    <div id='div_ft1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.4: Traceback (most recent call last):
+  File "/Users/liuyue/Library/Python/3.9/lib/python/site-packages/ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/liuyue/Desktop/learn_autotest/class_0730_apiauto/test_register.py", line 31, in test_register_ok
+    self.assertEqual(response.json()["msg"], expect["msg"])
+AssertionError: '无效的手机格式' != '无效的手格式'
+- 无效的手机格式
+?     -
++ 无效的手格式
 
 
 
@@ -307,31 +370,151 @@ AssertionError: {'code': 0, 'msg': '登录成功'} != {'code': 1, 'msg': '账号
     </td>
 </tr>
 
-<tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login_2</div></td>
+<tr id='ft1.5' class='none'>
+    <td class='failCase'><div class='testcase'>test_register_ok_05</div></td>
+    <td colspan='5' align='center'>
+ 
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.5')" >
+        fail</a>
+ 
+    <div id='div_ft1.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.5: Traceback (most recent call last):
+  File "/Users/liuyue/Library/Python/3.9/lib/python/site-packages/ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/liuyue/Desktop/learn_autotest/class_0730_apiauto/test_register.py", line 31, in test_register_ok
+    self.assertEqual(response.json()["msg"], expect["msg"])
+AssertionError: '账号已存在' != '无效的手格式'
+- 账号已存在
++ 无效的手格式
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+ 
+    </td>
+</tr>
+
+<tr id='ft1.6' class='none'>
+    <td class='failCase'><div class='testcase'>test_register_ok_06</div></td>
+    <td colspan='5' align='center'>
+ 
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.6')" >
+        fail</a>
+ 
+    <div id='div_ft1.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.6: Traceback (most recent call last):
+  File "/Users/liuyue/Library/Python/3.9/lib/python/site-packages/ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/liuyue/Desktop/learn_autotest/class_0730_apiauto/test_register.py", line 31, in test_register_ok
+    self.assertEqual(response.json()["msg"], expect["msg"])
+AssertionError: '无效的手机格式' != '无效的手格式'
+- 无效的手机格式
+?     -
++ 无效的手格式
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+ 
+    </td>
+</tr>
+
+<tr id='ft1.7' class='none'>
+    <td class='failCase'><div class='testcase'>test_register_ok_07</div></td>
+    <td colspan='5' align='center'>
+ 
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.7')" >
+        fail</a>
+ 
+    <div id='div_ft1.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.7: Traceback (most recent call last):
+  File "/Users/liuyue/Library/Python/3.9/lib/python/site-packages/ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/liuyue/Desktop/learn_autotest/class_0730_apiauto/test_register.py", line 31, in test_register_ok
+    self.assertEqual(response.json()["msg"], expect["msg"])
+AssertionError: '无效的手机格式' != '账号已存在'
+- 无效的手机格式
++ 账号已存在
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+ 
+    </td>
+</tr>
+
+<tr id='pt1.8' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_register_ok_08</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt1.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login_3</div></td>
+<tr id='pt1.9' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_register_ok_09</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt1.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login_4</div></td>
-    <td colspan='5' align='center'>pass</td>
-</tr>
+<tr id='ft1.10' class='none'>
+    <td class='failCase'><div class='testcase'>test_register_ok_10</div></td>
+    <td colspan='5' align='center'>
+ 
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.10')" >
+        fail</a>
+ 
+    <div id='div_ft1.10' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.10').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.10: Traceback (most recent call last):
+  File "/Users/liuyue/Library/Python/3.9/lib/python/site-packages/ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/liuyue/Desktop/learn_autotest/class_0730_apiauto/test_register.py", line 30, in test_register_ok
+    self.assertEqual(response.json()["code"], expect["code"])
+AssertionError: 1 != 2
 
-<tr id='pt1.5' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login_5</div></td>
-    <td colspan='5' align='center'>pass</td>
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+ 
+    </td>
 </tr>
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>5</td>
-    <td class="text text-success">4</td>
-    <td class="text text-danger">1</td>
+    <td>10</td>
+    <td class="text text-success">3</td>
+    <td class="text text-danger">7</td>
     <td class="text text-warning">0</td>
     <td> </td>
 </tr>
@@ -349,14 +532,14 @@ var data = [
         labelFontSize: '16'
     },
     {
-        value : 1,
+        value : 7,
         color : "#faebcc",
         label: "Fail",
         labelColor: 'white',
         labelFontSize: '16'
     },
     {
-        value : 4,
+        value : 3,
         color : "#d6e9c6",
         label : "Pass",
         labelColor: 'white',

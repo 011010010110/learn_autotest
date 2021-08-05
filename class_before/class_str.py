@@ -37,7 +37,7 @@
 # a=([1],)
 # print(type(a))
 # a={
-#     "class":1702,
+#     "class_0730_apiauto":1702,
 #     "name":"刘岳",
 #     "sex":"man",
 #     "source":[2,3,4,5],
@@ -48,7 +48,7 @@
 
 # 定义一个字典a
 # a={
-#     "class":1702,
+#     "class_0730_apiauto":1702,
 #     "name":"刘某人",
 #     "sex":"man",
 #     "source":[2,3,4,5],
@@ -58,7 +58,7 @@
 # res=a.pop("sex")    #a字典使用pop函数删除key为“sex”的键值对，然后把删除后的字典值重新赋值给res
 # #预期输出为一个新的字典，与原字典a相比删除了“sex”：“man”这个键值对，即：
 # # {
-# #   "class":1702,
+# #   "class_0730_apiauto":1702,
 # #   "name":"刘某人",
 # #   "source":[2,3,4,5],
 # #   "t_age":20,
@@ -73,7 +73,7 @@
 
 # 定义一个字典a
 # a={
-#     "class":1702,
+#     "class_0730_apiauto":1702,
 #     "name":"刘某人",
 #     "sex":"man",
 #     "source":[2,3,4,5],
@@ -87,7 +87,7 @@
 # print(res)
 
 # a={
-#     "class":1702,
+#     "class_0730_apiauto":1702,
 #     "name":"刘某人",
 #     "sex":"man",
 #     "source":[2,3,4,5],
@@ -98,7 +98,7 @@
 # print(a)
 
 a = {
-    "class": 1702,
+    "class_0730_apiauto": 1702,
     "name": "刘某人",
     "sex": "man",
     "source": [2, 3, 4, 5],

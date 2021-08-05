@@ -2,7 +2,7 @@
 # @Author:liuyue
 # @Email:liuyue@soyoung.com
 # @coding:utf-8
-# class RobotOne:   #第一代
+# class_0730_apiauto RobotOne:   #第一代
 #     def __init__(self,year,name):
 #         self.year = year
 #         self.name = name
@@ -14,7 +14,7 @@
 #         print("{0}年生产的机器人{1},产自CN".format(self.year,self.name))
 #
 #
-# class RobotTwo():  #第二代
+# class_0730_apiauto RobotTwo():  #第二代
 #     def __init__(self,year,name):
 #         self.year = year
 #         self.name = name
