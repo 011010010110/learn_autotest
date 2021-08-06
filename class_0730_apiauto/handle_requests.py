@@ -39,6 +39,9 @@ def send_requests(method, url, data=None, token=None):
     return res
 
 
+"""
+调试
+"""
 # if __name__ == '__main__':
 #     login_url = "http://api.lemonban.com/futureloan/member/login"
 #     login_datas = {"mobile_phone": "13845467789", "pwd": "1234567890"}

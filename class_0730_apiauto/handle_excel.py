@@ -53,9 +53,12 @@ class Test_Handel_Excel:
         self.wb.close()
 
 
-if __name__ == '__main__':
-    file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "api_cases.xlsx")
-    exc = Test_Handel_Excel(file_path, "注册")
-    cases = exc.test_all_datas()
-    exc.close_file()
-    print(cases)
+"""
+调试
+"""
+# if __name__ == '__main__':
+#     file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "api_cases.xlsx")
+#     exc = Test_Handel_Excel(file_path, "注册")
+#     cases = exc.test_all_datas()
+#     exc.close_file()
+#     print(cases)

@@ -30,5 +30,3 @@ class TestRegister(unittest.TestCase):
         self.assertEqual(response.json()["code"], expect["code"])
         self.assertEqual(response.json()["msg"], expect["msg"])
 
-        # self.assertNotEqual(response.json()["code"], expect["code"])
-        # self.assertNotEqual(response.json()["msg"], expect["msg"])
